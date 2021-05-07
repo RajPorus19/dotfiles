@@ -1,0 +1,38 @@
+# open terminal
+super + Return
+	st
+# open emacs in terminal
+super + shift + Return
+	st -e emacsclient -c -t
+# open dmenu 
+super + d
+	dmenu_run -i -F -p "Launch this program :"
+# quick open terminal apps
+super + b 
+	firefox 
+super + F
+	pcmanfm
+super + E
+	emacsclient -nc
+super + c
+	$HOME/.local/bin/editconfig.sh
+super + P
+	$HOME/.local/bin/editcode.sh
+super + Tab
+	$HOME/.local/bin/switchwindows.sh
+super + V
+    st -e pulsemixer
+super + ctrl + l
+    i3lock -c 000000 -e -f -b -u -p win
+super + ctrl + m
+	$HOME/.local/bin/choosemusic.sh
+super + Print
+    maim -s -u | tee ~/Pictures/Screenshots/$(date +%s).png | xclip -selection clipboard -t image/png
+Print
+    maim | tee ~/Pictures/Screenshots/$(date +%s).png | xclip -selection clipboard -t image/png
+super + y
+    clipmenu -l 20 -i -F -p "Copy this:"
+super + N
+    dunstctl history-pop
+	
+   	 
