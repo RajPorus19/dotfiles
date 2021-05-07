@@ -52,3 +52,5 @@ export CM_HISTLENGTH=20
 export RUST_BACKTRACE=full
 # manage dotfiles with git
 alias config="/usr/bin/git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME"
+# display changed config files all the time
+config status
