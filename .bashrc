@@ -12,6 +12,10 @@ export LESSHISTFILE=-
 #gtk
 export GTK_THEME=Nordic
 export GTK2_RC_FILES=$HOME/.local/share/gtk-2.0/gtkrc
+# move npm away from home
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
+export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
 # gnu gpg path
 export GNUPGHOME=$HOME/.config/gnupg
 # systemd
