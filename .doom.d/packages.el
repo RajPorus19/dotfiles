@@ -49,7 +49,6 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
 (package! anaconda-mode)
-(package! python-environement)
 (package! virtualenv)
 (package! auto-complete)
 (package! pyimport)
