@@ -58,3 +58,6 @@ export RUST_BACKTRACE=full
 alias config="/usr/bin/git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME"
 # display changed config files all the time
 config status
+# java
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
+export PATH=$PATH:$JAVA_HOME/bin
