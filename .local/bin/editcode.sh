@@ -1,5 +1,5 @@
 #!/bin/sh
-chosenFile=$(du -a ~/Projects/* | awk '{print $2}' | dmenu -i -F -p "Edit file :")
+chosenFile=$(du -a ~/Projects/* | awk '{print $2}' | dmenu -i -F -p "Edit file :" )
 declare -a options=(
   "emacs"
   "nvim"
@@ -7,7 +7,7 @@ declare -a options=(
 )
 choice=$(printf '%s\n' "${options[@]}" | dmenu -i -F -p 'Choose your editor :' "${@}")
 if [ "$choice" == "emacs" ]; then
-    emacsclient -nc $chosenFile &
+    st -e emacsclient -t -c $chosenFile &
 elif [ "$choice" == "nvim" ]; then
     st -e nvim $chosenFile &
 elif [ "$choice" == "file" ]; then
