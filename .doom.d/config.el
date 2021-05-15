@@ -20,8 +20,10 @@
 ;;
 ;; They all accept either a font-spec, font string ("Input Mono-12"), or xlfd
 ;; font string. You generally only need these two:
-;;(setq doom-font (font-spec :family "monospace" :size 20 :weight 'semi-light)
-       ;;doom-variable-pitch-font (font-spec :family "sans" :size 20))
+
+(setq doom-font (font-spec :family "Source Code Pro" :size 15)
+      doom-variable-pitch-font (font-spec :family "sans" :size 15)
+      doom-big-font (font-spec :family "Source Code Pro" :size 24))
 
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
@@ -55,6 +57,13 @@
 ;; they are implemented.
 ;;
 ;;test config, might remove it later
+
+;; pokemon in status bar
+(use-package poke-line
+  :config
+  (poke-line-global-mode 1)
+  (poke-line-set-pokemon "gengar"))
+
 (eval-after-load "company"
  '(add-to-list 'company-backends 'company-anaconda))
 (add-hook 'python-mode-hook 'anaconda-mode)
@@ -85,8 +94,3 @@
 ;;flutter
 (setq flutter-sdk-path "/home/porus/Downloads/fromGit/flutter/")
 
-;; pokemon in status bar
-(use-package! poke-line
-  :config
-  (poke-line-mode t)
-  (poke-line-set-pokemon "gengar"))
