@@ -23,6 +23,7 @@ alias goodbye="systemctl poweroff"
 alias restart="systemctl reboot"
 # ls
 alias ls='ls --color=auto'
+alias tree='tree -C'
 # pacman
 alias update='doas pacman -Syyu'
 alias install='doas pacman -S'
