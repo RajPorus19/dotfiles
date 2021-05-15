@@ -65,3 +65,5 @@
 (package! unicode-fonts)
 (package! lsp-java)
 (package! py-autopep8)
+;; add pokemons to your buffer
+(package! poke-line)
