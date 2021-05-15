@@ -34,5 +34,5 @@ super + y
     clipmenu -l 20 -i -F -p "Copy this:"
 super + N
     dunstctl history-pop
-	
-   	 
+super + m
+    xclip -o | xargs -r mpv --loop
