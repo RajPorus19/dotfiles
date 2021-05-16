@@ -64,3 +64,5 @@ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 export PATH=$PATH:$JAVA_HOME/bin
 # local scripts
 export PATH=$PATH:$HOME/.local/bin/
+# pass
+export PASSWORD_STORE_DIR="$HOME/.config/pass"
