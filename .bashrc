@@ -66,3 +66,5 @@ export PATH=$PATH:$JAVA_HOME/bin
 export PATH=$PATH:$HOME/.local/bin/
 # pass
 export PASSWORD_STORE_DIR="$HOME/.config/pass"
+# ytfzf
+export YTFZF_EXTMENU='dmenu -F -p "Search on youtube:" -i -l 30'
