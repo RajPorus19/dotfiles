@@ -18,6 +18,8 @@ super + c
 	$HOME/.local/bin/editconfig.sh
 super + P
 	$HOME/.local/bin/editcode.sh
+super + ctrl + p
+    $HOME/.local/bin/passmenu 
 super + Tab
 	$HOME/.local/bin/switchwindows.sh
 super + V
