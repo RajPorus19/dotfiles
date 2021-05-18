@@ -30,8 +30,8 @@ alias install='doas pacman -S'
 alias search='pacman -Ss'
 alias remove='doas pacman -Rs'
 # youtube
-alias ytmp3playlist='youtube-dl --extract-audio --yes-playlist  --audio-format mp3'
-alias ytmp3='youtube-dl --extract-audio --audio-format mp3'
+alias ytmp3playlist='youtube-dl --extract-audio --yes-playlist  --audio-format mp3 --embed-thumbnail --add-metadata'
+alias ytmp3='youtube-dl --extract-audio --audio-format mp3 --embed-thumbnail --add-metadata'
 # prompt
 PS1='[\u@\h \W]\$ '
 # Default Apps
