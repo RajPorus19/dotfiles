@@ -7,7 +7,7 @@ declare -a options=(
 )
 choice=$(printf '%s\n' "${options[@]}" | dmenu -i -F -p 'Choose your editor :' "${@}")
 if [ "$choice" == "emacs" ]; then
-    st -e emacsclient -t -c $chosenFile &
+    emacsclient -nc $chosenFile &
 elif [ "$choice" == "nvim" ]; then
     st -e nvim $chosenFile &
 elif [ "$choice" == "file" ]; then
