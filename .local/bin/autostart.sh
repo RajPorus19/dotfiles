@@ -10,3 +10,4 @@ systemctl --user import-environment DISPLAY &
 clipmenud & 
 pcmanfm -d &
 exec /home/porus/.local/bin/greetings.sh &
+mpd &
