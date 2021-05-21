@@ -19,7 +19,7 @@ super + c
 super + P
 	$HOME/.local/bin/editcode.sh
 super + ctrl + y
-    ytfzf -D
+    st -e ytfzf -tN
 super + Tab
 	$HOME/.local/bin/switchwindows.sh
 super + V

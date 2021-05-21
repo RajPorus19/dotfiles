@@ -67,3 +67,5 @@
 (package! py-autopep8)
 ;; add pokemons to your buffer
 (package! poke-line)
+(package! ox-hugo)
+(package! easy-hugo)
