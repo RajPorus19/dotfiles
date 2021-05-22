@@ -32,6 +32,8 @@ alias remove='doas pacman -Rs'
 # youtube
 alias ytmp3playlist='youtube-dl --extract-audio --yes-playlist  --audio-format mp3 --embed-thumbnail --add-metadata'
 alias ytmp3='youtube-dl --extract-audio --audio-format mp3 --embed-thumbnail --add-metadata'
+# webcam
+alias webcam='mpv av://v4l2:/dev/video0 --profile=low-latency --untimed'
 # prompt
 PS1='[\u@\h \W]\$ '
 # Default Apps
