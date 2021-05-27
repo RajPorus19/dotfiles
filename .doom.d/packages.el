@@ -65,7 +65,10 @@
 (package! unicode-fonts)
 (package! lsp-java)
 (package! py-autopep8)
-;; add pokemons to your buffer
 (package! poke-line)
 (package! ox-hugo)
 (package! easy-hugo)
+(package! ob-ipython)
+(package! jupyter)
+(package! ein)
+(package! ewal)

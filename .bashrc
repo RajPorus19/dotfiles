@@ -18,6 +18,8 @@ export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
 export XINITRC="$XDG_CONFIG_HOME"/X11/xinitrc
 # gnu gpg path
 export GNUPGHOME=$HOME/.config/gnupg
+# docker
+alias docker="doas docker"
 # systemd
 alias goodbye="systemctl poweroff"
 alias restart="systemctl reboot"
