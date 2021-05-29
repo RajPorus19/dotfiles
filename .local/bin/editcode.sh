@@ -1,5 +1,5 @@
 #!/bin/sh
-chosenFile=$(du -a ~/Projects/* | awk '{print $2}' | dmenu -i -F -p "Edit file :" )
+chosenFile=$(du -a ~/Coding/* | awk '{print $2}' | dmenu -i -F -p "Edit file :" )
 declare -a options=(
   "emacs"
   "nvim"
