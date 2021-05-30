@@ -1,51 +1,38 @@
---[[
-#=====================================================================================
-#                               aureola
-# Date    : 27/01/2018
-# Author  : Erik Dubois at http://www.erikdubois.be
-# Version : v2.0.3
-# License : Distributed under the terms of GNU GPL version 2 or later
-# Documentation : http://erikdubois.be/category/linux/aureola/
-#======================================================================================
-
-#======================================================================================
-#                               
-# Source : conky-sys-info V5 by +WillemO 25-june-16
-#
-#======================================================================================
-
-
-]]
-
 conky.config = {
 
 	--Various settings
-
 	background = true, 							-- forked to background
-	cpu_avg_samples = 2,
-	diskio_avg_samples = 10,
-	double_buffer = true,
-	if_up_strictness = 'address',
-	net_avg_samples = 2,
-	no_buffers = true,
-	temperature_unit = 'celsius',
-	text_buffer_size = 2048,
-	update_interval = 1,
-	imlib_cache_size = 0,                       --spotify cover
+    own_window = yes,
+    own_window_class = Conky,
+    own_window_type = override,
+    background=yes,
+	cpu_avg_samples = 2,						-- The number of samples to average for CPU monitoring.
+	diskio_avg_samples = 10,					-- The number of samples to average for disk I/O monitoring.
+	double_buffer = true,						-- Use the Xdbe extension? (eliminates flicker)
+	if_up_strictness = 'address',				-- how strict if testing interface is up - up, link or address
+	net_avg_samples = 2,						-- The number of samples to average for net data
+	no_buffers = true,							-- Subtract (file system) buffers from used memory?
+	temperature_unit = 'fahrenheit',			-- fahrenheit or celsius
+	text_buffer_size = 2048,					-- size of buffer for display of content of large variables - default 256
+	update_interval = 1,						-- update interval
+	imlib_cache_size = 0,                       -- disable image cache to get a new spotify cover per song
 
-	--Placement
+	-- Placement (Conky on MIDDLE of THREE monitors at 1920x1080)
+	alignment = 'top_left',		                -- top_left,top_middle,top_right,bottom_left,bottom_middle,bottom_right,
+	gap_x = 3540,                               -- pixels between right or left border
+	gap_y = 70,									-- pixels between bottom or left border
 
     -- Placement (For SINGLE monitor users!)
 	--alignment = 'top_right',		            -- top_left,top_middle,top_right,bottom_left,bottom_middle,bottom_right,
-	gap_x = 3540,                               -- pixels between right or left border
-	gap_y = 1700,									-- pixels between bottom or left border
+	--gap_x = 50,								-- pixels between right or left border
+	--gap_y = 70,								-- pixels between bottom or left border
 
-	minimum_height = 400,
-	minimum_width = 260,
-	maximum_width = 280,
+    -- Size
+    minimum_height = 200,						-- minimum height of window
+	minimum_width = 260,						-- minimum height of window
+	maximum_width = 260,						-- maximum height of window
 
 	--Graphical
-
 	border_inner_margin = 5, 					-- margin between border and text
 	border_outer_margin = 5, 					-- margin between border and edge of window
 	border_width = 0, 							-- border width in pixels
@@ -64,7 +51,6 @@ conky.config = {
 	stippled_borders = 0,						-- dashing the border
 
 	--Textual
-	
 	format_human_readable = true,				-- KiB, MiB rather then number of bytes
 	font = 'Source Code Pro:bold:size=10',  	-- font for complete conky unless in code defined
 	max_text_width = 0,							-- 0 will make sure line does not get broken if width too smal
@@ -78,42 +64,23 @@ conky.config = {
 	use_xft = true,								-- xft font - anti-aliased font
 	xftalpha = 1,								-- alpha of the xft font - between 0-1
 
-
 	--Windows
+	own_window = true,							-- create your own window to draw
+	own_window_argb_value = 255,			    -- real transparency - composite manager required 0-255
+	own_window_argb_visual = true,				-- use ARGB - composite manager required
+	own_window_class = 'Conky',					-- manually set the WM_CLASS name for use with xprop
+	own_window_colour = '#282c34',				-- set colour if own_window_transparent no
+	own_window_transparent = false,				-- if own_window_argb_visual is true sets background opacity 0%
+	own_window_title = 'xmonad_conky',			-- set the name manually; default conky "hostname"
+	own_window_type = 'desktop',				-- if own_window true options are: normal/override/dock/desktop/panel
+	own_window_hints = 'undecorated,below,above,sticky,skip_taskbar,skip_pager',  -- if own_window true - just hints - own_window_type sets it
 
-	own_window = true,
-	own_window_argb_value = 150,
-	own_window_argb_visual = true,
-	own_window_class = 'Conky',
-	own_window_colour = '#000000',
-	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
-	own_window_transparent = no,
-	own_window_title = 'system_conky',
-	own_window_type = 'override',-- # options are: normal/override/dock/desktop/panel
-	
-
-	--Colours
-
-	default_color = '#000000',  				-- default color and border color
+	--Colors
 	color0 = '#c678dd',
 	color1 = '#bbc2cf',
 	color2 = '#51afef',
 	color3 = '#98be65',
-	color4 = '#BDBDBD',
-	color5 = '#CCCCCC', 
-	color6 = '#FFFFFF',
-
-	--Signal Colours
-	color7 = '#1F7411',  --green
-	color8 = '#FFA726',  --orange
-	color9 = '#F1544B',  --firebrick
-	
-
-	--Lua
-
-
 };
-
 
 conky.text = [[
 ${alignc}${color0}${font Ubuntu:size=30}${time %H:%M}${font}
