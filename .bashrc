@@ -5,9 +5,10 @@
 [[ $- != *i* ]] && return
 # nnn 
 export NNN_BMS='d:~/Documents;D:~/Downloads/'
+export NNN_FIFO=/tmp/nnn.fifo
 export NNN_COLORS="2136"                           # use a different color for each context
 export NNN_TRASH=1                                 # trash (needs trash-cli) instead of delete
-export NNN_PLUG='o:cd'
+export NNN_PLUG='o:cd;p:preview'
 export NNN_FCOLORS='c1e2272e006033f7c6d6abc4'
 nnn_cd()                                                                                                   
 {
@@ -83,3 +84,5 @@ export PASSWORD_STORE_DIR="$HOME/.config/pass"
 # ytfzf
 export YTFZF_EXTMENU='dmenu -F -p "Search on youtube:" -i -l 30'
 cat /usr/share/pokeshell/$(($RANDOM % 151 + 1)).pokemon
+# ls icons
+alias ls='/opt/coreutils/bin/ls'
