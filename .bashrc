@@ -84,5 +84,5 @@ export PASSWORD_STORE_DIR="$HOME/.config/pass"
 # ytfzf
 export YTFZF_EXTMENU='dmenu -F -p "Search on youtube:" -i -l 30'
 cat /usr/share/pokeshell/$(($RANDOM % 151 + 1)).pokemon
-# ls icons
-alias ls='/opt/coreutils/bin/ls'
+# ls icons exa
+alias ls='/usr/bin/exa --icons'
