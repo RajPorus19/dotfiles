@@ -1,5 +1,6 @@
 sxhkd & # deamon for keybindings
 exec /home/porus/.local/bin/screen.sh &
+exec /home/porus/.screenlayout/screen.sh &
 picom --experimental-backends &
 xset r rate 300 75 & # faster keyboard
 setxkbmap fr -option "ctrl:nocaps" -option "shift:both_capslock" & # french keyboard layout + ctrl swap
