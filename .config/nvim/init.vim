@@ -84,3 +84,5 @@ nnoremap <leader>gg :Git <CR>
 
 " rooter
 let g:rooter_patterns = ['.git', 'Makefile']
+" disable warnings
+let g:coc_disable_startup_warning = 1

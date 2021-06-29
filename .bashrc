@@ -37,11 +37,11 @@ alias restart="systemctl reboot"
 # ls
 alias ls='ls --color=auto'
 alias tree='tree -C'
-# pacman
-alias update='doas pacman -Syyu'
-alias install='doas pacman -S'
-alias search='pacman -Ss'
-alias remove='doas pacman -Rs'
+# apt-get 
+alias update='doas apt-get update && apt-get upgrade'
+alias install='doas apt-get install'
+alias search='apt search'
+alias remove='doas apt-get remove'
 # youtube
 alias ytmp3playlist='youtube-dl --extract-audio --yes-playlist  --audio-format mp3 --embed-thumbnail --add-metadata'
 alias ytmp3='youtube-dl --extract-audio --audio-format mp3 --embed-thumbnail --add-metadata'
@@ -85,4 +85,4 @@ export PASSWORD_STORE_DIR="$HOME/.config/pass"
 export YTFZF_EXTMENU='dmenu -F -p "Search on youtube:" -i -l 30'
 cat /usr/share/pokeshell/$(($RANDOM % 151 + 1)).pokemon
 # ls icons exa
-alias ls='/usr/bin/exa --icons'
+#alias ls='/usr/bin/exa --icons'
