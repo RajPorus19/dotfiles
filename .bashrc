@@ -86,3 +86,7 @@ export YTFZF_EXTMENU='dmenu -F -p "Search on youtube:" -i -l 30'
 cat /usr/share/pokeshell/$(($RANDOM % 151 + 1)).pokemon
 # ls icons exa
 alias ls='/usr/bin/exa --icons'
+# pywal
+#(cat ~/.cache/wal/sequences &)
+#starship
+eval "$(starship init bash)"
