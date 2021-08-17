@@ -7,7 +7,7 @@ setxkbmap fr -option "ctrl:nocaps" -option "shift:both_capslock" & # french keyb
 emacs --daemon &
 # redshift &
 systemctl --user import-environment DISPLAY &
-feh --bg-fill --no-fehbg ~/Pictures/Wallpapers/wallpaper.jpg &
+feh --bg-max --no-fehbg ~/Pictures/Wallpapers/wallpaper.jpg &
 clipmenud & 
 pcmanfm -d &
 exec /home/porus/.local/bin/greetings.sh &
