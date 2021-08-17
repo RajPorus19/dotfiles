@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "coc-godot": ">=0.0.1",
+    "coc-jsref": ">=1.1.15",
+    "coc-marketplace": ">=1.8.1",
+    "coc-pyright": ">=1.1.144",
+    "coc-tsserver": ">=1.7.0"
+  }
+}
