@@ -3,7 +3,7 @@ exec_always --no-startup-id /home/porus/.local/bin/autostart.sh
 # this is your "super" key or windows key
 set $mod Mod4
 # set the font
-font pango:Source Code Pro 18
+font pango:Source Code Pro 12
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -107,7 +107,7 @@ bindsym $mod+Shift+b bar mode toggle
 # finds out, if available)
 bar {
     modifier Mod1
-	font pango:Source Code Pro 10
+	font pango:Source Code Pro 12
 	position bottom 
 	status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	i3bar_command i3bar -t
