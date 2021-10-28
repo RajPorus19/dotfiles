@@ -50,10 +50,10 @@ alias webcam='mpv av://v4l2:/dev/video0 --profile=low-latency --untimed'
 # prompt
 PS1='[\u@\h \W]\$ '
 # Default Apps
-export EDITOR="nvim"
-export MANPAGER="nvim -c 'set ft=man' -"
+#export EDITOR="nvim"
+#export MANPAGER="nvim -c 'set ft=man' -"
 export READER="zathura"
-export VISUAL="nvim"
+#export VISUAL="nvim"
 export TERMINAL="st"
 export BROWSER="firefox"
 export VIDEO="mpv"
