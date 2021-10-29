@@ -42,6 +42,7 @@ alias update='doas pacman -Syyu'
 alias install='doas pacman -S'
 alias search='pacman -Ss'
 alias remove='doas pacman -Rs'
+alias purge='doas pacman -Rcns'
 # youtube
 alias ytmp3playlist='youtube-dl --extract-audio --yes-playlist  --audio-format mp3 --embed-thumbnail --add-metadata'
 alias ytmp3='youtube-dl --extract-audio --audio-format mp3 --embed-thumbnail --add-metadata'
@@ -79,13 +80,15 @@ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 export PATH=$PATH:$JAVA_HOME/bin
 # local scripts
 export PATH=$PATH:$HOME/.local/bin/
+# cargo bin
+export PATH=$PATH:$HOME/.cargo/bin/
 # pass
 export PASSWORD_STORE_DIR="$HOME/.config/pass"
 # ytfzf
 export YTFZF_EXTMENU='dmenu -F -p "Search on youtube:" -i -l 30'
 cat /usr/share/pokeshell/$(($RANDOM % 151 + 1)).pokemon
 # ls icons exa
-alias ls='/usr/bin/exa --icons'
+alias ls='exa --icons'
 # pywal
 #(cat ~/.cache/wal/sequences &)
 #starship

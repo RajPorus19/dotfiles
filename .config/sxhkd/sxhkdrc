@@ -9,7 +9,7 @@ super + d
 	dmenu_run -i -F -p "Launch this program :"
 # quick open terminal apps
 super + b 
-	firefox 
+    chromium
 super + F
 	pcmanfm
 super + E
