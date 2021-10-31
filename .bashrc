@@ -21,8 +21,8 @@ trap nnn_cd EXIT
 # variables
 export LESSHISTFILE=-
 #gtk
-export GTK_THEME=Nordic
-export GTK2_RC_FILES=$HOME/.local/share/gtk-2.0/gtkrc
+export GTK_THEME=Dracula
+export GTK2_RC_FILES=/usr/share/themes/Dracula/gtk-2.0/gtkrc
 # move npm away from home
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
 export XAUTHORITY="$XDG_RUNTIME_DIR"/Xauthority
