@@ -78,9 +78,11 @@ nnoremap <leader>: :Commands <CR>
 nnoremap <leader><leader> :Files <CR>
 nnoremap <leader>is :Snippets <CR>
 nnoremap <leader>hm :Maps <CR>
+nnoremap <leader>sm :BLines<CR>
 
 "git
 nnoremap <leader>gg :Git <CR>
 
 " rooter
 let g:rooter_patterns = ['.git', 'Makefile']
+
